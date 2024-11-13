@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creatives for You</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind configuration for dark mode and custom gradient
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          backgroundImage: {
+            'rainbow': 'linear-gradient(to right, #ff0000, #ff7f00, #989619, #00ff00, #0000ff, #4b0082, #8b00ff)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-[#F5F5F5] dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+  <!-- Navbar start -->
+
+  <nav class="bg-white shadow-md py-4 dark:bg-gray-900 transition-colors duration-300">
+
+    <div class="px-4 mx-auto flex items-center justify-between ">
+
+      <!-- Logo Section -->
+      <img src="image/c4u full logo_2022 1.png" alt="Creatives for You Logo" class="h-8 mr-3 dark:invert">
+
+      <!-- Hamburger Icon -->
+      <button id="menu-toggle" class="md:hidden text-gray-700 dark:text-gray-200">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+
+      <!-- Navigation Links (Desktop) -->
+      <ul id="nav-links" class="hidden md:flex space-x-6 text-gray-700 dark:text-gray-300">
+        <li><a href="#" class="hover:text-sky-400">Home</a></li>
+        <li><a href="#" class="hover:text-sky-400">About Us</a></li>
+        <li><a href="#" class="text-red-500 hover:text-sky-400">Upskill</a></li>
+        <li><a href="#" class="hover:text-sky-400">Contact Us</a></li>
+      </ul>
+
+      <!-- Button Section (Desktop) -->
+      <div class="hidden md:flex items-center space-x-4 ">
+        <a href="#"
+          class="bg-red-500 text-white px-6 py-2 rounded-md text-lg font-semibold hover:bg-green-600 transition-transform transform hover:scale-95 duration-700">Register
+          Interest</a>
+        <button id="toggleDarkMode" class="text-gray-700 dark:text-gray-300">
+          <i class="fas fa-moon dark:hidden"></i>
+          <i class="fas fa-sun hidden dark:inline text-yellow-500"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-white dark:bg-gray-800 p-4 space-y-4 md:hidden">
+
+      <a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-sky-400">Home</a>
+      <a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-sky-400">About
+        Us</a>
+      <a href="#" class="block text-red-500 hover:text-indigo-500 dark:hover:text-sky-400">Upskill</a>
+      <a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-sky-400">Contact
+        Us</a>
+      <a href="#"
+        class="block bg-red-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-transform transform hover:scale-95 duration-700">Register
+        Interest
+      </a>
+      <button id="mobile-theme-toggle"
+        class="bg-gray-800 text-white px-4 py-2 rounded-md transition-colors duration-300 dark:bg-yellow-500 dark:text-gray-900">
+        <i id="mobile-theme-icon" class="fas fa-moon mr-2"></i>
+        <span id="mobile-theme-text">Dark Mode</span>
+      </button>
+
+    </div>
+
+  </nav>
+
+  <!-- Navbar end -->
+
+  <!-- Hero Section -->
+
+  <div class="relative overflow-hidden h-screen dark:invert">
+
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="image/Background.jpg" class="w-full h-full object-cover dark:invert" alt="Audience">
+    </div>
+
+    <!-- Content Overlay -->
+    <div class="relative z-10 flex items-center h-full">
+
+      <div class="text-center max-w-3xl mx-auto px-6 sm:px-8">
+
+        <p
+          class="font-semibold text-lg text-white tracking-wider uppercase mb-4 transition-transform transform hover:scale-75 duration-700">
+          Discover <span class="text-red-500">-</span> Interact <span class="text-red-500">-</span> Engage
+        </p>
+        <div class="text-[48px] md:text-[56px] text-white transition-transform transform hover:scale-110 duration-700">
+          <span>Connecting</span>
+          <span class="text-red-500 underline underline-offset-8 decoration-red-500">talent</span>
+          <span>to</span>
+        </div>
+        <p
+          class="text-[48px] md:text-[56px] text-white mt-2 transition-transform transform hover:scale-90 duration-700">
+          opportunity through <span class="text-red-500 underline underline-offset-8 decoration-red-600">skills</span>
+        </p>
+        <p class="mt-6 text-white max-w-2xl">
+          We foster a skill-focused environment enabling students to navigate their career with their self-paced
+          learning journey and businesses to gain market-ready talent.
+        </p>
+        <div class="mt-10">
+          <a href="#"
+            class="inline-block px-10 py-3 md:py-4 text-lg font-medium text-white bg-red-600 rounded-full shadow-lg transition-transform transform hover:scale-95 duration-700 hover:shadow-2xl hover:shadow-blue-500 hover:bg-blue-500">
+            Ask questions
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Box Section -->
+
+  <div class="dark:invert bg-inherit">
+
+    <section class="flex flex-col md:flex-row items-center gap-10 mx-auto max-w-6xl dark:invert">
+
+      <div class="text-center md:text-left">
+        <h2 class="text-4xl font-bold text-gray-800 leading-tight">
+          At <span class="text-red-500">C4U</span>,<br> We Empower:
+        </h2>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-10">
+
+        <!-- Students Card -->
+        <div
+          class="bg-gray-800 text-white p-6 rounded-lg w-64 text-left transition-transform transform hover:scale-90 duration-500">
+
+          <div
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center transition-transform transform hover:scale-150 duration-500">
+            <img src="image/37.png" alt="icon">
+          </div>
+          <h3 class="text-xl font-bold mb-4 mt-4">Students</h3>
+          <p
+            class="text-gray-300 leading-relaxed text-sm transition-transform transform hover:scale-125 duration-500 hover:bg-rainbow hover:bg-clip-text hover:text-transparent">
+            We help students find their way in a fast-evolving world by creating a personalised learning journey
+            guaranteed to help them stand out in a crowded job market.
+          </p>
+
+        </div>
+
+        <!-- Universities Card with Rainbow Text -->
+        <div
+          class="bg-gray-800 text-white p-6 rounded-lg w-64 text-left transition-transform transform hover:scale-90 duration-500">
+
+          <div
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center transition-transform transform hover:scale-150 duration-500">
+            <img src="image/50.png" alt="icon">
+          </div>
+          <h3 class="text-xl font-bold mb-4 mt-4">Universities</h3>
+          <p
+            class="text-gray-300 leading-relaxed text-sm transition-transform transform hover:scale-125 duration-500 hover:bg-rainbow hover:bg-clip-text hover:text-transparent">
+            We help your emerging talent to unlock their full potential by combining education and work to create
+            future-ready employees.
+          </p>
+
+        </div>
+
+        <!-- Businesses Card -->
+        <div
+          class="bg-gray-800 text-white p-6 rounded-lg w-64 text-left transition-transform transform hover:scale-90 duration-500">
+
+          <div
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center transition-transform transform hover:scale-150 duration-500">
+            <img src="image/16.png" alt="icon">
+          </div>
+          <h3 class="text-xl font-bold mb-4 mt-4">Businesses</h3>
+          <p
+            class="text-gray-300 leading-relaxed text-sm transition-transform transform hover:scale-125 duration-500 hover:bg-rainbow hover:bg-clip-text hover:text-transparent">
+            We connect businesses with highly skilled individuals for better results and profitability, fostering
+            high-impact workforces.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- Image Gallery Start -->
+
+  <div class="dark:invert bg-inherit">
+
+    <section class="bg-[url('image/Oval.png')] bg-repeat-y">
+
+      <!-- Center Line Separator -->
+      <div class="justify-center items-center py-10 absolute inset-x-0 hidden sm:flex">
+        <img src="image/Line and circle content.png" alt="Decorative line separator">
+      </div>
+
+      <!-- 1st Section -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 gap-12 py-20 px-6 sm:px-16 relative z-10">
+        <!-- Left Content -->
+        <div class="mx-auto">
+          <p class="text-sm text-red-500 mb-4 uppercase font-semibold tracking-wide">About Us</p>
+          <h2
+            class="text-4xl sm:text-5xl mt-10 font-bold leading-tight text-gray-800 hover:text-green-500 transition duration-500 transform hover:translate-y-3">
+            Our Mission
+          </h2>
+          <p
+            class="text-base sm:text-lg mt-16 text-gray-600 hover:text-lime-500 hover:translate-x-3 transition duration-500">
+            To create a personalized pathway for continuous learning and transferable skills development.
+          </p>
+
+          <!-- Button -->
+          <button
+            class="mt-32 inline-flex items-center font-semibold text-red-500 transition transform hover:scale-110 duration-500 border-4 border-r-0 border-l-0 border-red-500 rounded-full px-6 py-2 hover:border-green-500 hover:shadow-2xl hover:shadow-green-500 hover:bg-green-500 hover:text-white">
+            <span>Find Out More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-5 h-5 ml-2 transition-transform duration-500 group-hover:translate-x-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 12h14" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Left Image -->
+        <div class="flex justify-center items-center">
+          <img src="image/Group 238902.png" alt="Mission Image"
+            class="w-full max-w-lg hover:scale-110 duration-500 dark:invert">
+        </div>
+      </section>
+
+      <!-- Second Section -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 gap-12 py-20 px-6 sm:px-16 relative z-10">
+        <!-- Left Image -->
+        <div class="flex justify-center items-center">
+          <img src="image/Right.png" alt="Mission Image"
+            class="w-full max-w-lg hover:scale-110 duration-500 dark:invert">
+        </div>
+
+        <!-- Right Content -->
+        <div class="mx-12">
+          <p class="text-sm text-red-500 mb-4 uppercase font-semibold tracking-wide">About Us</p>
+          <h2
+            class="text-4xl sm:text-5xl mt-10 font-bold leading-tight text-gray-800 hover:text-green-500 transition duration-500 transform hover:translate-y-3">
+            Our Vision
+          </h2>
+          <p
+            class="text-base sm:text-lg mt-16 text-gray-600 hover:text-lime-500 hover:translate-x-3 transition duration-500">
+            To have a globally recognised strategic bridge between education and the job market.
+          </p>
+          <button
+            class="mt-32 inline-flex items-center font-semibold text-red-500 transition transform hover:scale-110 duration-500 border-4 border-r-0 border-l-0 border-red-500 rounded-full px-6 py-2 hover:border-green-500 hover:shadow-2xl hover:shadow-green-500 hover:bg-green-500 hover:text-white">
+            <span class="mr-3">Contact us</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 transform group-hover:translate-x-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 12h14" />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Image Gallery End -->
+
+  <!-- Number Section Start -->
+
+  <div
+    class="flex flex-col md:flex-row justify-around items-center md:items-center py-12 relative space-y-12 md:space-y-0 dark:invert bg-white">
+
+    <!-- Discover Section -->
+    <div class="relative text-center md:text-start w-10/12 md:w-auto">
+
+      <!-- Large Number Background -->
+      <img src="image/1.png" alt="1"
+        class="absolute -top-8 left-1/2 transform -translate-x-1/2 md:translate-x-0 md:left-1/2 hover:scale-110 duration-500">
+      <!-- Icon -->
+      <img src="image/Frame.png" alt="Discover Icon"
+        class="mb-6 -mt-7 w-12 h-12 mx-auto md:mx-0 hover:scale-150 duration-500">
+      <h2 class="text-4xl font-bold hover:scale-110 duration-500 mb-8 hover:text-blue-500">Discover</h2>
+      <p
+        class="mt-2 text-sm text-[#757095] max-w-xs mx-auto hover:translate-x-3 duration-500 hover:bg-gradient-to-r hover:from-green-300 hover:via-red-400 hover:to-blue-500 hover:bg-clip-text hover:text-transparent hover:font-semibold">
+        We uncover students' unique skills to stand out in a crowded job market
+      </p>
+
+    </div>
+
+    <!-- Interact Section -->
+    <div class="relative text-center md:text-start w-10/12 md:w-auto">
+
+      <!-- Large Number Background -->
+      <img src="image/2.png" alt="2"
+        class="absolute -top-8 left-1/2 transform -translate-x-1/2 md:translate-x-0 md:left-1/2 hover:scale-110 duration-500">
+      <!-- Icon -->
+      <img src="image/Group (1).png" alt="Interact Icon"
+        class="mb-8 -mt-7 w-10 h-10 mx-auto md:mx-0 hover:scale-150 duration-500">
+      <h2 class="text-4xl font-bold hover:scale-110 duration-500 hover:text-blue-500 mb-8">Interact</h2>
+      <p
+        class="mt-2 text-sm text-[#757095] max-w-xs mx-auto hover:translate-x-3 duration-500 hover:bg-gradient-to-r hover:from-green-300 hover:via-red-400 hover:to-blue-500 hover:bg-clip-text hover:text-transparent hover:font-semibold">
+        We provide interactive activities for engaging learning experiences
+      </p>
+
+    </div>
+
+    <!-- Engage Section -->
+    <div class="relative text-center md:text-start w-10/12 md:w-auto">
+
+      <!-- Large Number Background -->
+      <img src="image/3.png" alt="3"
+        class="absolute -top-8 left-1/2 transform -translate-x-1/2 md:translate-x-0 md:left-1/2 hover:scale-110 duration-500">
+      <!-- Icon -->
+      <img src="image/Group.png" alt="Engage Icon"
+        class="mb-8 -mt-7 w-10 h-10 mx-auto md:mx-0 hover:scale-150 duration-500">
+      <h2 class="text-4xl font-bold hover:scale-110 duration-500 hover:text-blue-500 mb-8">Engage</h2>
+      <p
+        class="mt-2 text-sm text-[#757095] max-w-xs mx-auto hover:translate-x-3 duration-500 hover:bg-gradient-to-r hover:from-green-300 hover:via-red-400 hover:to-blue-500 hover:bg-clip-text hover:text-transparent hover:font-semibold">
+        We ensure students stay engaged with compelling content and resources
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- Number Section End -->
+
+  <!-- team section start -->
+
+  <div class="max-w-screen-xl relative dark:invert bg-inherit">
+
+    <img src="image/Rectangle 32.png" alt="" class="hidden md:block absolute">
+
+    <div class="mx-8 p-8">
+
+      <!-- Section Title -->
+      <h2 class="text-3xl font-bold">
+        The Creative Team behind <br> <span class="text-red-500 flex">the door <img src="image/Arrow_10.png" alt=""
+            class="hover:scale-150 duration-500 hidden md:block"></span>
+      </h2>
+
+      <!-- Decorative Image -->
+      <img src="image/Group 47269.png" alt="" class="hidden md:block absolute top-40 right-0 mr-4">
+      <img src="image/Group 47269.png" alt="" class="hidden md:block absolute bottom-0 left-0 ml-4">
+
+
+      <!-- Grid of Team Members -->
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Team Member 1 -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:scale-105 hover:shadow-2xl duration-500 dark:shadow-none dark:hover:shadow-2xl">
+          <img class="w-32 h-32 mx-auto rounded-full transform hover:scale-75 hover:shadow-2xl duration-500 dark:invert"
+            src="image/image 3.png" alt="Ekta Mahajan">
+          <h2 class="text-xl font-bold mt-4 hover:text-purple-500 duration-500 transform hover:scale-110">Ekta Mahajan
+          </h2>
+          <p class="text-gray-600 hover:text-green-500 hover:translate-y-2 duration-500">Founder & C.E.O</p>
+          <img src="image/telephone (4).png" alt="" class="mx-auto mt-4 cursor-pointer dark:invert">
+        </div>
+
+        <!-- Team Member 2 -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:scale-105 hover:shadow-2xl duration-500 dark:shadow-none dark:hover:shadow-2xl">
+          <img class="w-32 h-32 mx-auto rounded-full transform hover:scale-75 hover:shadow-2xl duration-500 dark:invert"
+            src="image/image 4.png" alt="Toby Potter-Drake">
+          <h2 class="text-xl font-bold mt-4 hover:text-purple-500 duration-500 transform hover:scale-110">Toby
+            Potter-Drake</h2>
+          <p class="text-gray-600 hover:text-green-500 hover:translate-y-2 duration-500">Product Manager Associate</p>
+          <img src="image/telephone (4).png" alt="" class="mx-auto mt-4 cursor-pointer">
+        </div>
+
+        <!-- Team Member 3 -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:scale-105 hover:shadow-2xl duration-500 dark:shadow-none dark:hover:shadow-2xl">
+          <img class="w-32 h-32 mx-auto rounded-full transform hover:scale-75 hover:shadow-2xl duration-500 dark:invert"
+            src="image/image 2.png" alt="Ross Davies">
+          <h2 class="text-xl font-bold mt-4 hover:text-purple-500 duration-500 transform hover:scale-110">Ross Davies
+          </h2>
+          <p class="text-gray-600 hover:text-green-500 hover:translate-y-2 duration-500">Corporate Growth Associate</p>
+          <img src="image/telephone (4).png" alt="" class="mx-auto mt-4 cursor-pointer dark:invert">
+        </div>
+
+        <!-- Team Member 4 -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:scale-105 hover:shadow-2xl duration-500 dark:shadow-none dark:hover:shadow-2xl">
+          <img class="w-32 h-32 mx-auto rounded-full transform hover:scale-75 hover:shadow-2xl duration-500 dark:invert"
+            src="image/image 1.png" alt="Leo Crozier">
+          <h2 class="text-xl font-bold mt-4 hover:text-purple-500 duration-500 transform hover:scale-110">Leo Crozier
+          </h2>
+          <p class="text-gray-600 hover:text-green-500 hover:translate-y-2 duration-500">Software Developer</p>
+          <img src="image/telephone (4).png" alt="" class="mx-auto mt-4 cursor-pointer">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- team section end -->
+
+  <!-- Footer start-->
+
+  <footer class="bg-gray-50 text-gray-800 py-10 dark:invert">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between">
+
+      <!-- Logo and Address -->
+      <div class="flex flex-col items-start mb-6 md:mb-0 w-full md:w-1/4">
+        <img src="image/c4u full logo_2022 1.png" alt="Creatives for You company logo" class="mb-4 max-w-full">
+        <address class="not-italic text-sm leading-8">
+          Level39<br>
+          One Canada Square,<br>
+          Canary Wharf,<br>
+          London,<br>
+          E14 5AB
+        </address>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="w-full md:w-3/4 grid grid-cols-2 gap-4 sm:grid-cols-4">
+
+        <!-- Home Links -->
+        <div class="mb-6">
+          <h3 class="font-bold text-lg mb-6 hover:scale-110 duration-500 hover:text-red-500">Home</h3>
+          <ul class="space-y-7 text-sm">
+            <li><a href="#" class="hover:text-red-500 hover:font-bold hover:scale-105 duration-300">Collaborations</a>
+            </li>
+            <li><a href="#" class="hover:text-green-500 hover:font-bold hover:scale-105 duration-300">Statistics</a>
+            </li>
+            <li><a href="#" class="hover:text-blue-500 hover:font-bold hover:scale-105 duration-300">How It Works</a>
+            </li>
+            <li><a href="#" class="hover:text-pink-500 hover:font-bold hover:scale-105 duration-300">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- About Us Links -->
+        <div class="mb-6">
+          <h3 class="font-bold text-lg mb-6 hover:scale-110 duration-500 hover:text-red-500">About Us</h3>
+          <ul class="space-y-7 text-sm">
+            <li><a href="#" class="hover:text-yellow-500 hover:font-bold hover:scale-105 duration-300">Who We Are</a>
+            </li>
+            <li><a href="#" class="hover:text-orange-500 hover:font-bold hover:scale-105 duration-300">Mission
+                statement</a></li>
+            <li><a href="#" class="hover:text-cyan-500 hover:font-bold hover:scale-105 duration-300">Our Vision</a></li>
+            <li><a href="#" class="hover:text-stone-500 hover:font-bold hover:scale-105 duration-300">The Team</a></li>
+          </ul>
+        </div>
+
+        <!-- Upskill Links -->
+        <div class="mb-6">
+          <h3 class="font-bold text-lg mb-6 hover:scale-110 duration-500 hover:text-red-500">Upskill</h3>
+          <ul class="space-y-7 text-sm">
+            <li><a href="#" class="hover:text-sky-500 hover:font-bold hover:scale-105 duration-300">IT Support</a></li>
+            <li><a href="#" class="hover:text-red-500 hover:font-bold hover:scale-105 duration-300">Project
+                Management</a></li>
+            <li><a href="#" class="hover:text-lime-500 hover:font-bold hover:scale-105 duration-300">Data Analysts</a>
+            </li>
+            <li><a href="#" class="hover:text-emerald-500 hover:font-bold hover:scale-105 duration-300">UX Design</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Links -->
+        <div>
+          <h3 class="font-bold text-lg mb-6 hover:scale-110 duration-500 hover:text-red-500">Contact Us</h3>
+          <ul class="space-y-7 text-sm">
+            <li><a href="#" class="hover:text-purple-500 hover:font-bold hover:scale-105 duration-300">Your message</a>
+            </li>
+            <li><a href="#" class="hover:text-indigo-500 hover:font-bold hover:scale-105 duration-300">Email</a></li>
+            <li><a href="#" class="hover:text-amber-600 hover:font-bold hover:scale-105 duration-300">Phone number</a>
+            </li>
+            <li><a href="#" class="hover:text-rose-500 hover:font-bold hover:scale-105 duration-300">LinkedIn</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-200 mt-6 pt-4 text-center text-sm text-gray-700">
+      <p>Copyright 2022 Creatives For You LTD</p>
+    </div>
+
+  </footer>
+
+<!-- footer end -->
+
+  <!-- Dark Mode Script -->
+
+  <script>
+    const darkModeButton = document.getElementById('toggleDarkMode');
+    const mobileDarkModeButton = document.getElementById('mobile-theme-toggle');
+    const mobileThemeText = document.getElementById('mobile-theme-text');
+    const mobileThemeIcon = document.getElementById('mobile-theme-icon');
+
+    darkModeButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const isDarkMode = document.body.classList.contains('dark');
+      localStorage.setItem('darkMode', isDarkMode);
+      darkModeButton.querySelector('i').classList.toggle('hidden');
+    });
+
+    mobileDarkModeButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const isDarkMode = document.body.classList.contains('dark');
+      localStorage.setItem('darkMode', isDarkMode);
+      mobileThemeText.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
+      mobileThemeIcon.classList.toggle('fa-sun');
+      mobileThemeIcon.classList.toggle('fa-moon');
+    });
+
+    // Check for saved dark mode preference
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark');
+      darkModeButton.querySelector('i').classList.toggle('hidden');
+      mobileThemeText.textContent = 'Light Mode';
+      mobileThemeIcon.classList.toggle('fa-sun');
+      mobileThemeIcon.classList.toggle('fa-moon');
+    }
+
+    // Mobile Menu Toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- js end -->
+
+</body>
+
+</html>
